@@ -22,7 +22,8 @@ body {
 }
 
 header {
-  background-color: #0066cc;
+  /* Switch to a soothing teal palette for a skincare brand */
+  background-color: #009688;
   color: #fff;
   padding: 2rem 1rem;
   text-align: center;
@@ -83,7 +84,7 @@ main {
 .product-details h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #0066cc;
+  color: #009688;
 }
 
 .description {
@@ -99,12 +100,13 @@ main {
 }
 
 .amount {
-  color: #e60023;
+  /* Price amount uses the same teal accent as the header */
+  color: #009688;
 }
 
 .button {
   display: inline-block;
-  background-color: #e60023;
+  background-color: #009688;
   color: #fff;
   padding: 0.75rem 1.25rem;
   border-radius: 4px;
@@ -115,7 +117,7 @@ main {
 
 .button:hover,
 .button:focus {
-  background-color: #c4001f;
+  background-color: #00796b;
 }
 
 .note {
