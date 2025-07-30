@@ -50,7 +50,8 @@ body {
     }
 
     .hero-btn {
-      background-color: #00796b;
+      /* Primary button in hero section uses pink accent */
+      background-color: #e91e63;
       color: #fff;
       padding: 0.8rem 1.8rem;
       border-radius: 4px;
@@ -61,7 +62,7 @@ body {
 
     .hero-btn:hover,
     .hero-btn:focus {
-      background-color: #00695c;
+      background-color: #c2185b;
     }
 
 
@@ -109,18 +110,19 @@ main {
 
 .product-details {
   flex: 1;
-  padding: 1.5rem;
+  /* Increase padding for better readability */
+  padding: 2rem;
 }
 
 .product-details h2 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #009688;
+  margin-bottom: 1.2rem;
+  color: #e91e63;
 }
 
 .description {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
   line-height: 1.5;
 }
 
@@ -131,13 +133,14 @@ main {
 }
 
 .amount {
-  /* Price amount uses the same teal accent as the header */
-  color: #009688;
+  /* Price amount uses the same pink accent as the header */
+  color: #e91e63;
 }
 
 .button {
   display: inline-block;
-  background-color: #009688;
+  /* Button uses pink accent */
+  background-color: #e91e63;
   color: #fff;
   padding: 0.75rem 1.25rem;
   border-radius: 4px;
@@ -146,9 +149,10 @@ main {
   transition: background-color 0.3s ease;
 }
 
+/* Darker pink for button hover state */
 .button:hover,
 .button:focus {
-  background-color: #00796b;
+  background-color: #c2185b;
 }
 
 .note {
@@ -174,14 +178,15 @@ footer {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       max-width: 800px;
       width: 100%;
-      margin: 2rem auto;
-      padding: 2rem 1.5rem;
+      /* Increase margin and padding for separation */
+      margin: 2.5rem auto;
+      padding: 2.5rem 2rem;
     }
 
     .features h2,
     .how-to h2,
     .testimonials h2 {
-      color: #009688;
+      color: #e91e63;
       margin-bottom: 1rem;
       text-align: center;
     }
@@ -196,7 +201,8 @@ footer {
 
     .features li {
       font-size: 1rem;
-      margin-bottom: 0.8rem;
+      /* More space between feature items */
+      margin-bottom: 1rem;
       position: relative;
       padding-left: 1.8rem;
     }
@@ -205,7 +211,7 @@ footer {
       content: '\2714';
       position: absolute;
       left: 0;
-      color: #009688;
+      color: #e91e63;
       font-weight: bold;
     }
 
@@ -216,16 +222,22 @@ footer {
       margin: 0 auto;
     }
 
+/* Add spacing between steps in the how-to list */
+.how-to ol li {
+  margin-bottom: 0.8rem;
+}
+
     .testimonials blockquote {
       font-style: italic;
-      border-left: 4px solid #009688;
+      border-left: 4px solid #e91e63;
       padding-left: 1rem;
-      margin: 1rem auto;
+      /* Increase margin to separate testimonials */
+      margin: 1.5rem auto;
       max-width: 600px;
     }
 
     .cta {
-      background-color: #009688;
+      background-color: #e91e63;
       color: #fff;
       text-align: center;
       padding: 2.5rem 1.5rem;
@@ -242,7 +254,7 @@ footer {
 
     .cta-btn {
       background-color: #fff;
-      color: #009688;
+      color: #e91e63;
       padding: 0.8rem 2rem;
       border-radius: 4px;
       text-decoration: none;
@@ -252,6 +264,6 @@ footer {
 
     .cta-btn:hover,
     .cta-btn:focus {
-      background-color: #00796b;
+      background-color: #c2185b;
       color: #fff;
     }
