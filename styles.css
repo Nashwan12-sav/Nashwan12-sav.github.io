@@ -21,44 +21,71 @@ body {
   min-height: 100vh;
 }
 
-header {
-  /* Switch to a soothing teal palette for a skincare brand */
-  background-color: #009688;
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center;
-}
+/* Hero section overrides the default header styles */
+/* Use root-level path for hero background when deploying via GitHub's upload interface */
+.hero {
+  background-image: url('hero-bg.png');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+      position: relative;
+    }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
+    .hero .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-header .tagline {
-  font-size: 1.1rem;
-  font-weight: 300;
-}
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero .tagline {
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-btn {
+      background-color: #00796b;
+      color: #fff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-btn:hover,
+    .hero-btn:focus {
+      background-color: #00695c;
+    }
+
 
 main {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 2rem 1rem;
+  width: 100%;
 }
 
-.product {
+/* Product overview section styling */
+.product-overview {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  margin: 2rem auto;
 }
 
-.product-image {
+/* Product image inside overview */
+.product-image-container img {
   width: 100%;
   max-width: 350px;
   object-fit: cover;
@@ -66,12 +93,16 @@ main {
 }
 
 @media (min-width: 600px) {
-  .product {
+  .product-overview {
     flex-wrap: nowrap;
   }
-  .product-image {
+  .product-image-container {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  .product-image-container img {
     border-radius: 8px 0 0 8px;
-    width: 45%;
+    width: 100%;
     height: auto;
   }
 }
@@ -133,3 +164,94 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+
+/* New section styles */
+    .features,
+    .how-to,
+    .testimonials {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .features h2,
+    .how-to h2,
+    .testimonials h2 {
+      color: #009688;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .features ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .features li {
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      position: relative;
+      padding-left: 1.8rem;
+    }
+
+    .features li::before {
+      content: '\2714';
+      position: absolute;
+      left: 0;
+      color: #009688;
+      font-weight: bold;
+    }
+
+    .how-to ol {
+      list-style-position: inside;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .testimonials blockquote {
+      font-style: italic;
+      border-left: 4px solid #009688;
+      padding-left: 1rem;
+      margin: 1rem auto;
+      max-width: 600px;
+    }
+
+    .cta {
+      background-color: #009688;
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      border-radius: 8px;
+      max-width: 800px;
+      width: 100%;
+      margin: 2.5rem auto;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-btn {
+      background-color: #fff;
+      color: #009688;
+      padding: 0.8rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .cta-btn:hover,
+    .cta-btn:focus {
+      background-color: #00796b;
+      color: #fff;
+    }
